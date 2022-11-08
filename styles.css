@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+section {
+    margin-top: 20px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+}
+
+.input-container{
+    display: flex;
+    justify-content: center;
+    border: 2px solid rgb(73, 115, 204);
+}
+.contenedor{
+    text-align: center;
+}
+
+input{
+    display: flex;
+    outline: none;
+    border: none;
+    color: white;
+    background-color:black ;
+  }
+
+h1, h2, h3{
+    color: rgb(73, 115, 204);
+}
+#buton{
+    border: none;
+    background-color:rgb(73, 115, 204) ;
+    color: white;
+}

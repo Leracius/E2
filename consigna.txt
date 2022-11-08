@@ -1,0 +1,11 @@
+----------------------NUCBA EENTRA N°2--------------------------------
+
+Utilizando el array de E-1 que cotenia objetos de pizzas 
+
+*Crear un archivo html con un input de tipo number, un boton y un contenedor
+en el cual renderizar el resultado de la busqueda
+
+*El desafio sera, al tocar el boton, capturar el valor ingresado en el input
+
+*Renderizar el contenido en el contenedor en un h2 con el nombre y en un
+h3 con el precio de la pizza cuyo id coincida con el numero ingresado en el input 
