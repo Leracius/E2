@@ -2,6 +2,7 @@ body {
     margin: 0;
     display: flex;
     justify-content: center;
+    background-color: rgb(13, 33, 87);
 }
 
 section {
@@ -12,6 +13,7 @@ section {
     align-items: center;
     flex-direction: column;
     background-color: black;
+    border-radius: 5px;
 }
 
 .input-container{
@@ -21,6 +23,7 @@ section {
 }
 .contenedor{
     text-align: center;
+    margin: 5px;
 }
 
 input{
@@ -31,8 +34,13 @@ input{
     background-color:black ;
   }
 
-h1, h2, h3{
+h1{
     color: rgb(73, 115, 204);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h2, h3{
+    color: rgba(218, 218, 78, 0.993);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 #buton{
     border: none;

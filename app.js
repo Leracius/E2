@@ -51,10 +51,18 @@ const addEl =(num)=>{
 // al resultado de las busqueda
 
 const addError =()=>{
-    H2.innerHTML='No se encontro ninguna pizza con el id indicado',
-    H3.innerHTML='Pruebe con 1, 2, 3, 4, 5 o 6 :)'
-    // H3.innerHTML=`pruebe con alguno de los siguientes id${array}`
+    let id = document.getElementById('input').value
+    if(id==''){
+        H2.innerHTML='Por favor ingrese un numero',
+        H3.innerHTML=`pruebe con alguno de los siguientes N°: ${array.join('-')}`}
+    else{
+        H2.innerHTML='No se encontro ninguna pizza con el id indicado'
+        H3.innerHTML=`pruebe con alguno de los siguientes N°: ${array.join('-')}`}
 };
+
+const emptyField = ()=>{
+    H2.innerHTML='Ingrese un numero por favor'
+}
 
 BUTON.addEventListener('click',()=>{
     let id = document.getElementById('input').value
@@ -66,5 +74,6 @@ BUTON.addEventListener('click',()=>{
 // se ejecuta la funcion para invocar al 10
 function messi(m) {
     if(document.getElementById('input').value==m)
-    BODY.style.backgroundImage='url(https://th.bing.com/th/id/R.788d5b4d1d78a039ad0686911bdf9580?rik=1trGvAP9KKdCUQ&pid=ImgRaw&r=0)' 
+    BODY.style.backgroundImage='url(https://th.bing.com/th/id/R.788d5b4d1d78a039ad0686911bdf9580?rik=1trGvAP9KKdCUQ&pid=ImgRaw&r=0)'
+    BODY.style.backgroundPosition='cover' 
 }
