@@ -1,25 +1,32 @@
 body {
+    background-size: contain;
+    background-repeat: no-repeat;
     margin: 0;
+    height: 800px;
     display: flex;
     justify-content: center;
-    background-color: rgb(13, 33, 87);
+    align-items: flex-start;
+    background-color: black;
 }
-
+.img-container{
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 10px;
+}
 section {
-    margin-top: 20px;
-    width: 500px;
+    margin: 20px 0 20px 0;
+    width: 800px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: black;
-    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .input-container{
     display: flex;
     justify-content: center;
-    border: 2px solid rgb(73, 115, 204);
+    border: 2px solid rgb(255, 168, 55);
 }
 .contenedor{
     text-align: center;
@@ -38,12 +45,24 @@ h1{
     color: rgb(73, 115, 204);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-h2, h3{
+h2, h3, h4{
     color: rgba(218, 218, 78, 0.993);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 #buton{
     border: none;
-    background-color:rgb(73, 115, 204) ;
+    background-color:rgb(255, 168, 55) ;
     color: white;
+}
+
+@media (max-width: 576px) {
+    body{   
+        background-image: url(./assets/background-pizza.png);
+    }
+    .img-container{
+        margin-bottom: 10px;
+    }
+    section{
+        margin: 200px 0 20px 0;
+    }
 }
