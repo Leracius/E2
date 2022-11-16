@@ -55,6 +55,7 @@ const addEl =(num)=>{
 const addError =()=>{
     let id = document.getElementById('input').value
     CONTIMG.style.backgroundImage="none"
+    H3.innerHTML=""
     if(id==''){
         H2.innerHTML='Por favor ingrese un numero',
         H3.innerHTML=`pruebe con alguno de los siguientes N°: ${array.join('-')}`}
